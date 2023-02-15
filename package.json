@@ -1,4 +1,5 @@
 {
+  "homepage": "https://hailatGH.github.io/NFT_Marketplace_Showcase",
   "name": "nft-marketplace-showcase",
   "private": true,
   "version": "0.0.0",
@@ -6,19 +7,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "preview": "vite preview"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.2.6"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.6",
+    "gh-pages": "^5.0.0",
     "vite": "^4.1.0"
   }
 }
